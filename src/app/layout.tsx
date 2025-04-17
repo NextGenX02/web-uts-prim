@@ -3,6 +3,7 @@ import "./globals.css";
 import {Outfit} from "next/font/google";
 import {config} from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
+import { Analytics } from "@vercel/analytics/react"
 config.autoAddCss = false
 
 const ouft = Outfit({
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-black ${ouft.className}`}>
+      <Analytics/>
         {children}
       </body>
     </html>
