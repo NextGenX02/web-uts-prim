@@ -7,7 +7,8 @@ config.autoAddCss = false
 
 const ouft = Outfit({
     style:"normal",
-    display: "auto"
+    display: "auto",
+    subsets: ["latin-ext"]
 })
 
 
